@@ -11,7 +11,7 @@ RUN apt-get install -y --no-install-recommends software-properties-common curl
 RUN add-apt-repository -y ppa:fcwu-tw/ppa
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends --allow-unauthenticated supervisor openssh-server pwgen sudo vim-tiny net-tools \
-        x11vnc xvfb gtk2-engines-murrine ttf-ubuntu-font-family firefox \
+        x11vnc xserver-xorg-video-dummy gtk2-engines-murrine ttf-ubuntu-font-family firefox \
         nginx python-pip python-dev build-essential mesa-utils libgl1-mesa-dri \
         gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine pinta \
         dbus-x11 x11-utils
