@@ -1,1 +1,1 @@
-docker run -it --rm -p 6080:80 -p 5900:5900 pddenhar/docker-mint-vnc-desktop
+docker run -it --rm -p 6080:80 -p 5900:5900 --init pddenhar/docker-mint-vnc-desktop
