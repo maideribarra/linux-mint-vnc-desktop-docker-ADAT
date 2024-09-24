@@ -1,1 +1,2 @@
-docker run -it --rm -p 6080:80 -p 5900:5900 --init pddenhar/docker-mint-vnc-desktop
+docker build -t linuxm3 .
+docker run -it --rm -p 5900:5900 -p 6080:6080 linuxm3
