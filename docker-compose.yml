@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  vnc:
+    build:
+      context: .              # Contexto de construcción
+      dockerfile: Dockerfile   # Nombre del Dockerfile (opcional si es Dockerfile)
+    image: linuxm4:latest
+    ports:
+      - "5900:5900"
+      - "6080:6080"  # Exponer también el puerto 6080
+    volumes:
+      - ./volumes/db/sQlite/:/db/sQlite/
+      - ./volumes/hsqldb/data/:/hsqldb/data/
+      - ./volumes/var/lib/hsqldb:/var/lib/hsqldb
+      - ./volumes/opt/:/opt/
+    command: >
+      sh startup.sh
