@@ -66,7 +66,7 @@ RUN apt-get remove -y wget unzip && \
 
 #RUN java -version
 
-VOLUME ["/db/sQlite/", "/hsqldb/data/","/var/lib/hsqldb","/opt/"]
+#VOLUME ["/db/sQlite/", "/hsqldb/data/","/var/lib/hsqldb","/opt/"]
 # Crear directorios necesarios
 RUN mkdir -p /var/run/sshd /etc/supervisor/conf.d
 
