@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  vnc:
+    restart: always
+    build:
+      context: .              # Contexto de construcción
+      dockerfile: Dockerfile   # Nombre del Dockerfile (opcional si es Dockerfile)
+    image: linuxmadat105:latest
+    ports:
+      - "5900:5900"
+      - "6080:6080"  # Exponer también el puerto 6080
+    volumes:
+      - ./mnt/:/mnt/
+    command: >
+      sh startup.sh
