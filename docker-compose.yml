@@ -6,7 +6,7 @@ services:
     build:
       context: .              # Contexto de construcción
       dockerfile: Dockerfile   # Nombre del Dockerfile (opcional si es Dockerfile)
-    image: linuxmadat105:latest
+    image: linuxmadat108:latest
     ports:
       - "5900:5900"
       - "6080:6080"  # Exponer también el puerto 6080
