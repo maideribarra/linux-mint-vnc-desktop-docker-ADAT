@@ -3,7 +3,7 @@
 # Crear directorios necesarios
 mkdir -p /var/run/sshd
 chown -R root:root /root
-#rm -f /tmp/.X0-lock
+rm -f /tmp/.X0-lock
 # Iniciar Xvfb para crear un entorno gráfico
 Xvfb :0 -screen 0 1280x720x24 &
 sleep 2  # Espera un momento para asegurarte de que Xvfb esté listo
